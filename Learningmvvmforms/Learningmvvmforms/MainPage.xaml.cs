@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Learningmvvmforms.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,9 +10,12 @@ namespace Learningmvvmforms
 {
 	public partial class MainPage : ContentPage
 	{
+        MainViewModel mainViewModel;
 		public MainPage()
 		{
 			InitializeComponent();
+            mainViewModel = new MainViewModel();
+            BindingContext = mainViewModel;
 		}
 	}
 }

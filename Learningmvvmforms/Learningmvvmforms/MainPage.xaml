@@ -2,13 +2,24 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Learningmvvmforms"
-             x:Class="Learningmvvmforms.MainPage">
+             x:Class="Learningmvvmforms.MainPage"
+         BindingContext="Learningmvvmforms.ViewModel" >
 
     <StackLayout>
         <!-- Place new controls here -->
-    	<Label Text="Welcome to Xamarin.Forms!" 
+    	<Label  
            HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+           VerticalOptions="CenterAndExpand"
+               Text="{Binding HelloMessage}"/>
+        <Button Text=" click me.."
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
+                Command="{Binding SayHelloCommand}"/>
+        <Entry Placeholder="Enter the text here"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"
+               Text="{Binding Name}"/>
+        
     </StackLayout>
 
 </ContentPage>
