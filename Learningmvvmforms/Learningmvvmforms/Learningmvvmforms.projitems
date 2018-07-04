@@ -23,4 +23,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\CarViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\MainViewModel.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Models\" />
+  </ItemGroup>
 </Project>
