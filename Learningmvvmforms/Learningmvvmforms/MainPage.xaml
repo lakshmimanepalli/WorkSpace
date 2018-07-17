@@ -19,7 +19,6 @@
                HorizontalOptions="CenterAndExpand"
                VerticalOptions="CenterAndExpand"
                Text="{Binding Name}"/>
-        
     </StackLayout>
 
 </ContentPage>

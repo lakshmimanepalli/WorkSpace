@@ -1,3 +1,4 @@
+using Learningmvvmforms.Pages;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -11,7 +12,7 @@ namespace Learningmvvmforms
 		{
 			InitializeComponent();
 
-			MainPage = new MainPage();
+			MainPage = new XamlSamples();
 		}
 
 		protected override void OnStart ()
