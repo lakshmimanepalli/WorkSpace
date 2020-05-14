@@ -1,0 +1,2 @@
+include ':app', ':sharedprefs', ':msalauth', ':dao', ':common'
+rootProject.name='AndroidTemplate'
